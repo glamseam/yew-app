@@ -1,0 +1,14 @@
+{
+    "name": "yew-app",
+    "description": "Yew App.",
+    "scripts": {
+        "lint": "stylelint 'scss/**/*.{sass,scss}'",
+        "lint:fix": "stylelint --fix 'scss/**/*.{sass,scss}'"
+    },
+    "devDependencies": {
+        "stylelint": "^13.13.1",
+        "stylelint-config-property-sort-order-smacss": "^7.1.0",
+        "stylelint-config-recommended": "^5.0.0",
+        "stylelint-scss": "^3.21.0"
+    }
+}
