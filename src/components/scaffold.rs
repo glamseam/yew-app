@@ -1,22 +1,31 @@
 use yew::prelude::*;
+// use yew::services::ConsoleService;
+// use yew::{
+//     html,
+//     Component,
+//     ComponentLink,
+//     Html,
+//     ShouldRender
+// };
 
-pub struct App {}
+
+pub struct Scaffold {}
 
 pub enum Msg {}
 
-impl Component for App {
+impl Component for Scaffold {
     type Message = Msg;
     type Properties = ();
 
-    fn create(_: Self::Properties, _: ComponentLink<Self>) -> Self {
-        App {}
+    fn create(_props: Self::Properties, _link: ComponentLink<Self>) -> Self {
+        Self {}
     }
 
     fn update(&mut self, _msg: Self::Message) -> ShouldRender {
         true
     }
 
-    fn change(&mut self, _: Self::Properties) -> ShouldRender {
+    fn change(&mut self, _props: Self::Properties) -> ShouldRender {
         false
     }
 

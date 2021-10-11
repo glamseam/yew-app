@@ -1,7 +1,8 @@
 use yew::prelude::*;
 use yew::services::ConsoleService;
-
 use js_sys::Date;
+
+use crate::components::button::Button;
 
 pub enum Msg {
     Increment,
@@ -62,6 +63,10 @@ impl Component for IncDec {
                     <b>{ "Rendered at: " }</b>
                     { String::from(Date::new_0().to_string()) }
                 </p>
+                <Button
+                    label="Comp Button"
+                    onclick=self.link.callback(|_| Msg::Increment)
+                />
             </div>
         }
     }
